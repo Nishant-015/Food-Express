@@ -1,0 +1,30 @@
+{
+  "name": "foodie-express",
+  "version": "1.0.0",
+  "description": "Full-Stack Food Delivery Platform built with React, Node.js, Express, and MongoDB",
+  "main": "server/src/server.js",
+  "scripts": {
+    "start": "node server/src/server.js",
+    "server": "nodemon server/src/server.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "seed": "node server/src/scripts/seed.js",
+    "test:server": "npm test --prefix server"
+  },
+  "keywords": [
+    "food-delivery",
+    "react",
+    "nodejs",
+    "express",
+    "mongodb",
+    "mongoose",
+    "tailwind"
+  ],
+  "author": "FoodieExpress Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0"
+  }
+}
